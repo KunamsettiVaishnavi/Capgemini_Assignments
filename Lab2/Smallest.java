@@ -1,0 +1,30 @@
+package Lab2;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Smallest1 {
+	
+	public static void main(String[] args) {
+		
+		int n;
+		Smallest1 one = new Smallest1();
+		System.out.println("Enter the number of elements: ");
+		Scanner sc = new Scanner(System.in);
+		n = sc.nextInt();
+		System.out.println("Enter the elements: ");
+		int[] arr = new int[n];
+		for(int i = 0; i < n; i++) {
+			arr[i] = sc.nextInt();
+		}
+		sc.close();
+		System.out.println("The second smallest element of the array is: " + one.getSecondSmallest(arr));
+	}
+	
+	public int getSecondSmallest(int arr[]) {
+		Arrays.sort(arr);
+		return arr[1];
+	}
+}
+
+	
