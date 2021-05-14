@@ -20,19 +20,33 @@ public class MainClass {
 		Transaction t = session.beginTransaction();
 		
 		// ---- write code for data base operation ----
-		
+
 		Account a = new Account();
-		a.setAccId(102);
-		a.setAccountHolderName("Ram");
-		a.setBalance(2000);
+		a.setAccountHolderName("tara");
+		a.setBalance(3000);
 		
 		
 		session.save(a);  // insert into Account .....
 		
 		System.out.println("  -->> Data Saved ..");
-		t.commit();
+	//	t.commit();
+		
+		a = (Account)session.get(Account.class, 2);
+		System.out.println(a);
 		
 		
+		// get entity from database
+        Account a2 = session.get(Account.class, 1);
+        // do changes 
+        a2.setAccountHolderName("Rama");
+        // update the student object
+        session.saveOrUpdate(a2);
+        
+        //delete
+        session.delete(session.get(Account.class, 5));
+
+        // commit transaction
+        t.commit();
 		
 		
 		

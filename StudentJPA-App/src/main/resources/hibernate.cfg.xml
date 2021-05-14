@@ -13,7 +13,10 @@
    
   <property name="show_sql">true</property>
   <property name="hibernate.hbm2ddl.auto">update</property>
-  <mapping class="com.capg.jpa.p1.Account"/>
- 
+  <!--mapping class="com.capg.jpa.p2.Hotels"/>
+  <mapping class="com.capg.jpa.p2.TouristApp"/ 
+  -->
+  <mapping class="com.capg.jpa.p1.Student"/>
+  <mapping class="com.capg.jpa.p1.Course"/>
  </session-factory>
 </hibernate-configuration>

@@ -1,9 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.capg.jpa</groupId>
-  <artifactId>BasicJPA-App</artifactId>
+  <groupId>com.capg.app</groupId>
+  <artifactId>StudentJPA1</artifactId>
   <version>1</version>
-  
   <properties>
 		<springframework.version>5.0.3.RELEASE</springframework.version>
 		<springsecurity.version>5.0.1.RELEASE</springsecurity.version>
